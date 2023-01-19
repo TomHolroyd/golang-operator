@@ -1,0 +1,13 @@
+apiVersion: helloworld.example.net/v1alpha1
+kind: HelloWorld
+metadata:
+  labels:
+    app.kubernetes.io/name: helloworld
+    app.kubernetes.io/instance: helloworld-sample
+    app.kubernetes.io/part-of: golang-operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: golang-operator
+  name: helloworld-sample
+spec:
+  name: hello-world
+  size: 1
